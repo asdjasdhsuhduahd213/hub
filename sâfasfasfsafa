@@ -1,0 +1,315 @@
+
+-- // key script and link get key
+_G.key = "1"
+_G.linkkey = "https://www.facebook.com/nguyenanutgr"
+_G.tt = "20k 3 ngày"
+
+local UIGUI = Instance.new("ScreenGui")
+main= Instance.new("Frame")
+ UImain = Instance.new("UICorner")
+ UIbar1 = Instance.new("UICorner")
+ UIbar2 = Instance.new("UICorner")
+ UIbar3 = Instance.new("UICorner")
+ UIbar4 = Instance.new("UICorner")
+ 
+ UIbar= Instance.new("UICorner")
+ bar =Instance.new("TextLabel")
+ exit = Instance.new("TextButton")
+bar_1=Instance.new("TextLabel")
+bar_2=Instance.new("Frame")
+bar_3=Instance.new("Frame")
+bar_4=Instance.new("Frame")
+t_1 =Instance.new("TextLabel")
+t_2 =Instance.new("TextLabel")
+
+tt_name=Instance.new("TextLabel")
+tt_1=Instance.new("TextLabel")
+
+key_t=Instance.new("TextLabel")
+key_tb =Instance.new("TextBox")
+key_b =Instance.new("TextButton")
+key_g =Instance.new("TextButton")
+
+load_t=Instance.new("TextLabel")
+load_t1=Instance.new("TextLabel")
+load_t2=Instance.new("TextLabel")
+load_l=Instance.new("TextButton")
+load_b1=Instance.new("TextButton")
+load_b2=Instance.new("TextButton")
+
+
+
+UIGUI.Name = "UIGUI"
+UIGUI.Parent = game:WaitForChild("CoreGui")
+UIGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = UIGUI
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.258126051, 0, 0.228999169, 0)
+main.Size = UDim2.new(0, 500, 0, 200)
+main.BackgroundTransparency = 0.7
+UImain.Parent = main
+
+bar.Parent = main
+bar.BackgroundColor3 = Color3.fromRGB(5, 5, 5)
+bar.Size = UDim2.new(0, 498, 0, 30)
+bar.BorderColor3 = Color3.fromRGB(250, 250, 250)
+bar.Font = Enum.Font.Ubuntu
+bar.Text = "    Nguyễn An | Key"
+bar.TextColor3 = Color3.fromRGB(255, 255, 255)
+bar.TextSize = 14.000
+bar.TextWrapped = true
+bar.TextXAlignment = Enum.TextXAlignment.Left
+UIbar.Parent = bar
+
+exit.Name = "exit"
+exit.Parent = bar
+exit.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+exit.Position = UDim2.new(0.940000000, 0, 0.000000000, 0)
+exit.Size = UDim2.new(0, 30, 0, 30)
+exit.Font = Enum.Font.Ubuntu
+exit.Text = "X"
+exit.TextColor3 = Color3.fromRGB(250, 255, 250)
+exit.BackgroundTransparency = 1
+exit.TextSize = 20.000
+exit.BorderColor3 = Color3.fromRGB(250, 250, 250)
+exit.MouseButton1Down:connect(function()
+game.CoreGui.UIGUI:Destroy()
+end)
+
+bar_1.Name = "bar_1"
+bar_1.Parent = main
+bar_1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bar_1.Position = UDim2.new(0.000000000, 0, 0.180000000, 0)
+bar_1.Size = UDim2.new(0, 120, 0, 160)
+bar_1.Font = Enum.Font.Ubuntu
+bar_1.Text = "Có key chưa mà xài"
+bar_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+bar_1.TextSize = 14.000
+bar_1.TextWrapped = true
+bar_1.TextYAlignment = Enum.TextYAlignment.Top
+UIbar1.Parent = bar_1
+
+bar_2.Name = "bar_2"
+bar_2.Parent = main
+bar_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bar_2.Position = UDim2.new(0.250000000, 0, 0.180000000, 0)
+bar_2.Size = UDim2.new(0, 248, 0, 160)
+UIbar2.Parent = bar_2
+
+bar_3.Name = "bar_3"
+bar_3.Parent = main
+bar_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bar_3.Position = UDim2.new(0.755000000, 0, 0.180000000, 0)
+bar_3.Size = UDim2.new(0, 120, 0, 160)
+UIbar3.Parent = bar_3
+
+tt_name.Name = "tt_name"
+tt_name.Parent = bar_1
+tt_name.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tt_name.Size = UDim2.new(0, 120, 0, 30)
+tt_name.Position = UDim2.new(0, 0, 0.150000000, 0)
+tt_name.BackgroundTransparency = 1
+tt_name.Font = Enum.Font.Ubuntu
+tt_name.Text = "Thông Báo"
+tt_name.TextColor3 = Color3.fromRGB(255, 255, 255)
+tt_name.TextSize = 14.000
+tt_name.TextWrapped = true
+
+tt_1.Name = "tt_1"
+tt_1.Parent = bar_1
+tt_1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tt_1.Size = UDim2.new(0, 120, 0, 30)
+tt_1.Position = UDim2.new(0, 0, 0.270000000, 0)
+tt_1.BackgroundTransparency = 1
+tt_1.Font = Enum.Font.Ubuntu
+tt_1.Text = _G.tt
+tt_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+tt_1.TextSize = 14.000
+tt_1.TextWrapped = true
+
+t_1.Name = "t_1"
+t_1.Parent = bar_3
+t_1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+t_1.Size = UDim2.new(0, 120, 0, 30)
+t_1.BackgroundTransparency = 1
+t_1.Font = Enum.Font.Ubuntu
+t_1.Text = "Credit"
+t_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+t_1.TextSize = 14.000
+t_1.TextWrapped = true
+
+t_2.Name = "t_2"
+t_2.Parent = bar_3
+t_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+t_2.Position = UDim2.new(0, 0, 0.150000000, 0)
+t_2.Size = UDim2.new(0, 120, 0, 30)
+t_2.BackgroundTransparency = 1
+t_2.Font = Enum.Font.Ubuntu
+t_2.Text = "   #Nguyenanutgr"
+t_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+t_2.TextSize = 14.000
+t_2.TextWrapped = true
+t_2.TextXAlignment = Enum.TextXAlignment.Left
+
+key_t.Name = "key_t"
+key_t.Parent = bar_2
+key_t.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+key_t.Position = UDim2.new(0.2, 0, 0.130000000, 0)
+key_t.Size = UDim2.new(0, 150, 0, 30)
+key_t.Font = Enum.Font.Ubuntu
+key_t.Text = "Nhập Key"
+key_t.TextColor3 = Color3.fromRGB(255, 255, 255)
+key_t.BorderColor3 = Color3.fromRGB(250, 250, 250)
+key_t.TextSize = 14.000
+
+key_tb.Name = "key_tb"
+key_tb.Parent = bar_2
+key_tb.BackgroundColor3 = Color3.fromRGB(250, 250, 250)
+key_tb.Position = UDim2.new(0.2, 0, 0.360000000, 0)
+key_tb.Size = UDim2.new(0, 150, 0, 25)
+key_tb.Font = Enum.Font.Ubuntu
+key_tb.Text = "Nhập Chìa Khóa"
+key_tb.BorderColor3 = Color3.fromRGB(0,0,0)
+key_tb.TextSize = 14.000
+
+key_b.Name = "key_b"
+key_b.Parent = bar_2
+key_b.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+key_b.Position = UDim2.new(0.2, 0, 0.550000000, 0)
+key_b.Size = UDim2.new(0, 150, 0, 27)
+key_b.Font = Enum.Font.Ubuntu
+key_b.Text = "Check Key"
+key_b.TextColor3 = Color3.fromRGB(255, 255, 255)
+key_b.BorderColor3 = Color3.fromRGB(250, 250, 250)
+key_b.TextSize = 14.000
+key_b.MouseButton1Down:connect(function()
+
+if key_tb.Text == _G.key then
+    game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Nguyễn An";
+    Text = "Nhập key thành công";
+    Icon = "rbxthumb://type=Asset&id=11749957186&w=150&h=150"})
+    Duration = 5; 
+
+bar.Text = "   An | Load"
+bar_4.Visible = true
+else
+key_tb.Text =" Sai Chìa Khóa"
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Nguyễn An";
+    Text = "Mua key chưa mà đòi Hack";
+    Icon = "rbxthumb://type=Asset&id=11749957186&w=150&h=150"})
+    Duration = 5; 
+end
+end)
+
+key_g.Name = "key_g"
+key_g.Parent = bar_2
+key_g.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+key_g.Position = UDim2.new(0.32, 0, 0.800000000, 0)
+key_g.Size = UDim2.new(0, 100, 0, 15)
+key_g.Font = Enum.Font.Ubuntu
+key_g.Text = "Get Key"
+key_g.TextColor3 = Color3.fromRGB(255, 255, 255)
+key_g.BorderColor3 = Color3.fromRGB(250, 250, 250)
+key_g.TextSize = 14.000
+key_g.MouseButton1Down:connect(function()
+setclipboard(_G.linkkey)
+end)
+
+bar_4.Name = "bar_4"
+bar_4.Parent = main
+bar_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bar_4.Position = UDim2.new(0.250000000, 0, 0.180000000, 0)
+bar_4.Size = UDim2.new(0, 248, 0, 160)
+UIbar4.Parent = bar_4
+bar_4.Visible = false
+load_t.Name = "load_t"
+load_t.Parent = bar_4
+load_t.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+load_t.Position = UDim2.new(0.2, 0, 0.130000000, 0)
+load_t.Size = UDim2.new(0, 150, 0, 30)
+load_t.Font = Enum.Font.Ubuntu
+load_t.Text = "Nguyên An | Load"
+load_t.TextColor3 = Color3.fromRGB(255, 255, 255)
+load_t.BorderColor3 = Color3.fromRGB(250, 250, 250)
+load_t.TextSize = 14.000
+
+load_t1.Name = "load_t1"
+load_t1.Parent = bar_4
+load_t1.BackgroundColor3 = Color3.fromRGB(250, 250, 250)
+load_t1.Position = UDim2.new(0.2, 0, 0.360000000, 0)
+load_t1.BackgroundTransparency = 1
+load_t1.Size = UDim2.new(0, 150, 0, 25)
+load_t1.Font = Enum.Font.Ubuntu
+load_t1.Text = "             Anti Lag"
+load_t1.BorderColor3 = Color3.fromRGB(0,0,0)
+load_t1.TextColor3 = Color3.fromRGB(250, 255, 250)
+load_t1.TextSize = 14.000
+load_t1.TextXAlignment = Enum.TextXAlignment.Left
+
+load_t2.Name = "load_t2"
+load_t2.Parent = bar_4
+load_t2.BackgroundColor3 = Color3.fromRGB(250, 250, 250)
+load_t2.Position = UDim2.new(0.2, 0, 0.550000000, 0)
+load_t2.BackgroundTransparency = 1
+load_t2.Size = UDim2.new(0, 150, 0, 25)
+load_t2.Font = Enum.Font.Ubuntu
+load_t2.Text = "             Anti AFK"
+load_t2.BorderColor3 = Color3.fromRGB(0,0,0)
+load_t2.TextColor3 = Color3.fromRGB(250, 255, 250)
+load_t2.TextSize = 14.000
+load_t2.TextXAlignment = Enum.TextXAlignment.Left
+
+load_b1.Name = "load_b1"
+load_b1.Parent = load_t1
+load_b1.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+load_b1.Size = UDim2.new(0, 25, 0, 25)
+load_b1.Font = Enum.Font.Ubuntu
+load_b1.Text = ""
+load_b1.TextColor3 = Color3.fromRGB(250, 255, 250)
+load_b1.TextSize = 20.000
+load_b1.BorderColor3 = Color3.fromRGB(250, 250, 250)
+load_b1.MouseButton1Down:connect(function()
+   if load_b1.Text == "" then
+load_b1.Text = "X"
+else
+load_b1.Text = ""
+end
+end)
+
+load_b2.Name = "load_b2"
+load_b2.Parent = load_t2
+load_b2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+load_b2.Size = UDim2.new(0, 25, 0, 25)
+load_b2.Font = Enum.Font.Ubuntu
+load_b2.Text = ""
+load_b2.TextColor3 = Color3.fromRGB(250, 255, 250)
+load_b2.TextSize = 20.000
+load_b2.BorderColor3 = Color3.fromRGB(250, 250, 250)
+load_b2.MouseButton1Down:connect(function()
+if load.b2 == "" then
+load_b2.Text = "X"
+else
+load_b2.Text = ""
+end
+end)
+
+
+load_l.Name = "load_l"
+load_l.Parent = bar_4
+load_l.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+load_l.Position = UDim2.new(0.32, 0, 0.780000000, 0)
+load_l.Size = UDim2.new(0, 100, 0, 20)
+load_l.Font = Enum.Font.Ubuntu
+load_l.Text = "Loader"
+load_l.TextColor3 = Color3.fromRGB(255, 255, 255)
+load_l.BorderColor3 = Color3.fromRGB(250, 250, 250)
+load_l.TextSize = 14.000
+load_l.MouseButton1Down:connect(function()
+game.CoreGui.UIGUI:Destroy()
+_G.wl_key = '42cedb5f55b51579fb13e13cb34f73b957651298'
+loadstring(game:HttpGet('https://keshhub.xyz/.earlyaccess', true))()
+end)
